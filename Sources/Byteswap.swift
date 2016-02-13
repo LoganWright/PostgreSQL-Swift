@@ -4,6 +4,8 @@ import Glibc
 import Darwin
 #endif
 
+final class Test {}
+
 func floatFromInt32(input: Int32) -> Float {
     let array = byteArrayFrom(input)
     return typeFromByteArray(array, Float.self)
